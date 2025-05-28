@@ -245,7 +245,7 @@
       scale: 102%;
     }
     nav a.active-nav {
-    color: #7777ff; /* Choose your highlight color */
+    color: #7777ff; 
     font-weight: bold;
     border-bottom: 2px solid #7777ff;
     }
@@ -270,7 +270,7 @@
 }
 
 .card {
-  background-color: #fff;
+  background-color: var(--bg-color);
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   overflow: hidden;
