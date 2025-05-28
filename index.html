@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ganath Avinash Portfolio</title>
+  <link rel="icon" href="src/w.jpg">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js"></script>
+</head>
+<body>
+  <div class="overlay"></div>
+  <nav style="position: sticky;top: 0px;border-bottom:1px solid rgba(0, 0, 0, 0.441) ;box-shadow: 3px 3px 3px rgba(135, 135, 135, 0.735);z-index: 3;">
+    <div><strong style="color: #7777ff;font-size: 1.5rem;">GA</strong></div>
+    <ul class="kk">
+      <li><a href="#hero">Hero</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <button class="theme-toggle" id="themeToggle">🌙</button>
+    </ul>
+    <button id="ff" class="more" onclick="op()"><i class="fa fa-bars" aria-hidden="true"></i></button>
+    <button id="ff1" class="more" onclick="op1()"><i class="fa fa-times" aria-hidden="true"></i></button>
+    <button class="ii"><i class="fa fa-cubes" aria-hidden="true"></i></button>
+  </nav>
+  <div class="gt" id="gt">
+    <p style="float: right;margin-right: 10px;"></p>
+    <ul class="k" style="position: fixed;top: 17%;left: 40%;">
+      <li><a class="kl" id="kl" style="text-decoration: none;font-weight: bold;" href="#hero">Hero</a></li>
+      <li><a class="kl" id="kl1"  style="text-decoration: none;font-weight: bold;" href="#about">About</a></li>
+      <li><a class="kl" id="kl2"  style="text-decoration: none;font-weight: bold;" href="#skills">Skills</a></li>
+      <li><a class="kl" id="kl3"  style="text-decoration: none;font-weight: bold;" href="#projects">Projects</a></li>
+      <li><a class="kl" id="kl4"  style="text-decoration: none;font-weight: bold;" href="#certificates">Certificates</a></li>
+      <li><a class="kl" id="kl5"  style="text-decoration: none;font-weight: bold;" href="#contact">Contact</a></li>
+      <button class="theme-toggle" id="themeToggle1" style="margin-left: 15px;margin-top: 10px;" >🌙</button>
+    </ul>
+  </div>
+
+  <section class="hero" id="hero">
+    <div>
+      <p>&ThickSpace;Hello, I'm</p>
+      <h1>Ganath Avinash</h1>
+      <p>Computer Science Undergraduate</p>
+      <p>Passionate about solving problems and building things with code</p><br>
+      <a href="assets/Resume.pdf" download><button class="btn"><i class="fa fa-download" aria-hidden="true"></i>&ThickSpace;&ThickSpace;&ThickSpace;Download CV</button><br><br></a> 
+    </div>
+    <div><img class="me" src="assets/GA.jpg" style="margin-top: 10px;" alt="Code Illustration" width="300"></div>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <div style="display:flex;gap:2em;flex-wrap:wrap;margin-top:1em">
+      <img src="assets/a.png" id="we" style="border-radius: 10px;" alt="Ganath Avinash" width="200" />
+      <img src="assets/a2.png" id="we1" style="border-radius: 10px;" alt="Ganath Avinash" width="200" />
+      <div>
+        <p>I'm a Computer Science undergraduate with a growing passion for solving problems and building things with code. I'm currently focused on strengthening my foundations in Data Structures and Algorithms, while also exploring web development using technologies like HTML, CSS, JavaScript, and React.
+        <br><br>Though I don't have professional experience yet, I am consistently working on projects and participating in coding challenges to improve my practical skills. I enjoy learning by doing and am eager to contribute to real-world tech problems as I grow.
+        <br><br>Open to internships, collaborative projects, or any opportunity where I can learn and add value!</p><br>
+      </div>
+    </div>
+    <div style="display:flex;gap:2em;margin-top:1em">
+      <div class="card" style="background-image: url(assets/pm.jpeg);border: 1px solid black;margin-right: -13px;margin-left: -5px;">
+        <div style="background-color: transparent;backdrop-filter: blur(15px);padding: 15px;border-radius: 6px;border: 1px solid white;"><h3 style="color: black;"><svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.84 6.256A2.992 2.992 0 0115 20H9a2.992 2.992 0 01-2.001-5.166 12.083 12.083 0 01.841-6.256L12 14z" /></svg><br><center>Education</h3></center><br>
+        <center><p style="color: black;">Computer Science Undergraduate Student</p>
+        <p style="color: black;">Amrita Vishwa Vidyapeetam</p></center></div>
+      </div>
+      <div class="card" style="background-image: url(assets/gg.jpeg);background-size: contain;border: 1px solid black;">
+        <div style="background-color: transparent;backdrop-filter: blur(15px);padding: 15px;border-radius: 6px;border: 1px solid white;"><h3 style="color: black;"><svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-6h13V7H3v4h13v6H9z" /></svg><br><center>Experience</h3></center><br>
+        <center><p style="color: black;">Building Projects, Continuous Learning</p>
+        <p style="color: black;">2+ years of experience in Front-end</p></center></div>        
+      </div>
+    </div>
+  </section>
+
+  <section class="skills" id="skills">
+    <h2>Skills</h2><br><br>
+    <div id="skillBars"></div><br><br>
+    <h4 style="font-weight: normal;">
+      <em>*Only Programming skills are presented here, all other technical and soft skills has been listed in my <a href="https://www.linkedin.com/in/ganath-avinash-3265a8343/">LinkedIn</a> profile</em>
+    </h4>
+  </section>
+
+  <section class="projects" id="projects">
+    <h2>Projects</h2><br><br>
+    <div class="projects-grid">
+      <div class="card">
+        <img src="assets/BG.png" alt="Project Image" height="200px">
+        <h3>Wits & Bytes</h3>
+        <p>A wallpaper/stock images website with modern design and user-friendly interface.</p><br>
+        <a href="https://github.com/Ganath-Avinash" target="_self"><i class="fab fa-github" style="color: #7777ff;font-size: xx-large;"></i></a>&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;<a href="https://ganath-avinash.github.io/" target="_self"><i class="fa fa-link" style="color: #7777ff;font-size: xx-large;" aria-hidden="true"></i></a>
+      </div>
+      <div class="card">
+        <img src="assets/St.jpeg" alt="Project Image" height="200px">
+        <h3>Netflix Clone</h3>
+        <p>A responsive Netflix clone built with modern web technologies and streaming interface.</p><br>
+        <a href="https://github.com/Ganath-Avinash" target="_self"><i class="fab fa-github" style="color: #7777ff;font-size: xx-large;"></i></a>&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;<a href="https://ganath-avinash.github.io/" target="_self"><i class="fa fa-link" style="color: #7777ff;font-size: xx-large;" aria-hidden="true"></i></a>
+      </div>
+      <div class="card">
+        <img src="assets/RG.avif" alt="Project Image" height="200px">
+        <h3>Retro Games</h3>
+        <p>Enhanced retro-paced games using JavaScript and ReactJS with 0 bugs and crashes.</p><br>
+        <a href="https://github.com/Ganath-Avinash" target="_self"><i class="fab fa-github" style="color: #7777ff;font-size: xx-large;"></i></a>&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;<a href="https://ganath-avinash.github.io/" target="_self"><i class="fa fa-link" style="color: #7777ff;font-size: xx-large;" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </section>
+  <section class="certificates" id="certificates">
+    <h2>Certificates</h2><br><br>
+    <div class="certificates-grid">
+      <a href="assets/EF SET Certificate.pdf" style="all:unset ;"><div class="card"><img src="assets/E.png" alt="Certificate Image"  height="239px" width="80%"><p>EFSet Communication English - by EFset</p></div></a>
+      <a href="assets/Git.pdf" style="all:unset ;"><div class="card"><img src="assets/Gh.jpeg" alt="Certificate Image" height="239px"><p>Git and GitHub Mastery - by MindLuster</p></div></a>
+      <a href="https://www.linkedin.com/in/ganath-avinash-3265a8343/" style="all:unset ;"><div class="card"><img src="assets/pm.jpeg" alt="Certificate Image" height="239px"><p>Project Management - by <br>Coursera</p></div></a>
+    </div>
+    <br><br>
+    <h4 style="font-weight: normal;">
+      <em>*Only a few is presented here, all certifications can be viewed in my <a href="https://www.linkedin.com/in/ganath-avinash-3265a8343/">LinkedIn</a> profile</em>
+    </h4>
+  </section>
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <br>
+    <h4 style="font-weight: normal;">Let's Get in touch via the details provided below:</h4><br><br>
+    <div class="contact-container">
+      <div class="contact-box">
+        <div class="card"><i class="fa fa-phone" aria-hidden="true" style="color: #7777ff;font-size: xx-large;"></i>&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace; +91 9342246595</div>
+        <div class="card"><i class="fa fa-envelope" aria-hidden="true" style="color: #7777ff;font-size: xx-large;"></i>&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace; ganathavinash.gr@gmail.com</div>
+        <div class="card"><i class="fa fa-globe" aria-hidden="true" style="color: #7777ff;font-size: xx-large;"></i>&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace; Chennai, India</div>
+        <a href="https://www.linkedin.com/in/ganath-avinash-3265a8343/" style="text-decoration: none;all:unset ;cursor: pointer;"><div><i class="fab fa-linkedin" style="color: #7777ff;font-size: xx-large;" aria-hidden="true"></i>&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;LinkedIn Profile</div></a>
+      </div>
+      <div class="contact-form">
+        <form action="https://api.web3forms.com/submit" onsubmit="return validateForm()" method="POST">
+        <input type="hidden" name="access_key" value="c2d0d2f2-6ee1-4ead-a5dc-4e67ce03c6b4">
+        <input type="text" id="name" name="Name" style="padding: 15px;" placeholder="Your Name" />
+        <input type="email" id="email" name="Email" style="padding: 15px;"  placeholder="your.email@example.com" />
+        <textarea id="ttt" name="Query" placeholder="Your Message"></textarea>
+        <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer>
+    &copy; 2025 Ganath Avinash. Built with passion and code. All Rights Reserved
+  </footer>
+  <script>
+        const skills = [
+      { name: "HTML", level: 100 },
+      { name: "CSS", level: 100 },
+      { name: "JavaScript", level: 95 },
+      { name: "Java", level: 95 },
+      { name: "OOPs", level: 100 },
+      { name: "C", level: 95 },
+      { name: "Python", level: 95 },
+      { name: "DSA", level: 88 }
+    ];
+
+    const skillContainer = document.getElementById('skillBars');
+    skills.forEach(skill => {
+      const wrapper = document.createElement('div');
+      wrapper.classList.add('skills-bar');
+
+      const label = document.createElement('div');
+      label.classList.add('skill-label');
+      label.innerHTML = `<span>${skill.name}</span><span>${skill.level}%</span>`;
+
+      const bar = document.createElement('div');
+      bar.classList.add('bar');
+
+      const fill = document.createElement('div');
+      fill.classList.add('bar-fill');
+      fill.style.width = '0';
+
+      bar.appendChild(fill);
+      wrapper.appendChild(label);
+      wrapper.appendChild(bar);
+      skillContainer.appendChild(wrapper);
+
+      setTimeout(() => fill.style.width = skill.level + '%', 200);
+    });
+
+function validateForm() {
+    const fname = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const tarea = document.getElementById("ttt").value.trim();
+
+    let errorMessage = "";
+
+    if (fname === "") {
+        errorMessage += "Enter Name!!\n";
+    }
+
+    const nPattern = /^[a-zA-Z]+(?: [a-zA-Z]+)*$/;
+    if (!nPattern.test(fname)) {
+        errorMessage += "Enter a valid Name!!\n";
+    }
+
+    if (tarea === "") {
+        errorMessage += "Enter Your Query (It is mandatory)!!\n";
+    }
+
+    if (email === "") {
+        errorMessage += "Enter Your Gmail (It is mandatory)!!\n";
+    } else {
+        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!regex.test(email)) {
+            errorMessage += "Enter a valid Gmail Account!!\n";
+        }
+    }
+
+    if (errorMessage !== "") {
+        alert(errorMessage);
+        return false;
+    }
+
+    return true;
+}
+
+
+  const qwe=document.getElementById("gt");
+  const cross=document.getElementById("ff1");
+  const bar=document.getElementById("ff");
+
+  function op(){
+    qwe.style.left="0%";
+    bar.style.display="none";
+    cross.style.display="block";
+  }
+
+  
+  function op1(){
+    qwe.style.left="-100%";
+    bar.style.display="block";
+    cross.style.display="none";
+  }
+//
+
+  const sections = document.querySelectorAll('section');
+  const navLinks = document.querySelectorAll('nav a');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const id = entry.target.getAttribute('id');
+      const navLink = document.querySelector(`nav a[href="#${id}"]`);
+
+      if (entry.isIntersecting) {
+        navLinks.forEach(link => link.classList.remove('active-nav'));
+        navLink.classList.add('active-nav');
+      }
+    });
+  }, {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.6 // section is considered visible when 60% in viewport
+  });
+
+  sections.forEach(section => {
+    observer.observe(section);
+  });
+
+  const img1=document.getElementById("we");
+  const img2=document.getElementById("we1");
+  
+  const toggle = document.getElementById("themeToggle");
+  toggle.addEventListener("click", () => {
+    const theme = document.documentElement.getAttribute("data-theme");
+    if (theme === "dark") {
+      document.documentElement.setAttribute("data-theme", "light");
+      toggle.textContent = "🌙";
+      img2.style.display="none";
+      img1.style.display="block";
+    } else {
+      document.documentElement.setAttribute("data-theme", "dark");
+      toggle.textContent = "☀️";
+      img1.style.display="none";
+      img2.style.display="block";
+    }
+  });
+
+  const w1=document.getElementById("kl");
+  const w2=document.getElementById("kl1");
+  const w3=document.getElementById("kl2");
+  const w4=document.getElementById("kl3");
+  const w5=document.getElementById("kl4");
+  const w6=document.getElementById("kl5");
+
+  const toggle1 = document.getElementById("themeToggle1");
+  toggle1.addEventListener("click", () => {
+    const theme = document.documentElement.getAttribute("data-theme");
+    if (theme === "dark") {
+      document.documentElement.setAttribute("data-theme", "light");
+      toggle1.textContent = "🌙";
+      img2.style.display="none";
+      img1.style.display="block";
+      w1.style.color="#3f3fb0";
+      w2.style.color="#3f3fb0";
+      w3.style.color="#3f3fb0";
+      w4.style.color="#3f3fb0";
+      w5.style.color="#3f3fb0";
+      w6.style.color="#3f3fb0";
+
+    } else {
+      document.documentElement.setAttribute("data-theme", "dark");
+      toggle1.textContent = "☀️";
+      img1.style.display="none";
+      img2.style.display="block";
+      w1.style.color="#ddd";
+      w2.style.color="#ddd";
+      w3.style.color="#ddd";
+      w4.style.color="#ddd";
+      w5.style.color="#ddd";
+      w6.style.color="#ddd";
+    }
+  });
+  </script>
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll("section").forEach(section => {
+      observer.observe(section);
+    });
+  });
+</script>
+
+</body>
+</html>

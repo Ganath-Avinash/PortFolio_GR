@@ -1,0 +1,302 @@
+    :root {
+      --bg-color: #f8f9fc;
+      --text-color: #333;
+      --nav-bg: #fff;
+      --card-bg: #fff;
+      --footer-bg: #f1f1f1;
+    }
+
+    [data-theme="dark"] {
+      --bg-color: #121212;
+      --text-color: #e0e0e0;
+      --nav-bg: #1f1f1f;
+      --card-bg: #1e1e1e;
+      --footer-bg: #181818;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      line-height: 1.6;
+      color: var(--text-color);
+      background: var(--bg-color);
+    }
+    header, section, footer {
+      padding: 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--nav-bg);
+      padding: 1em;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 1em;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: var(--text-color);
+      font-weight: 600;
+    }
+    .theme-toggle {
+      cursor: pointer;
+      background: none;
+      border: 1px solid var(--text-color);
+      color: var(--text-color);
+      padding: 5px 10px;
+      border-radius: 25px;
+    }
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      padding-top: 40px;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      color: #7777ff;
+    }
+    .btn {
+      padding: 10px 20px;
+      background-color: #7777ff;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    .about, .skills, .projects, .certificates, .contact {
+      margin-top: 40px;
+    }
+    .skills-bar {
+      margin-bottom: 1em;
+    }
+    .skill-label {
+      display: flex;
+      justify-content: space-between;
+    }
+    .bar {
+      height: 10px;
+      background: #ddd;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    .bar-fill {
+      height: 100%;
+      background: #7777ff;
+      width: 0;
+      transition: width 1s ease-in-out;
+    }
+    .projects-grid, .certificates-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1em;
+      margin-top: 20px;
+    }
+    .card {
+      background: var(--card-bg);
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .contact-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .contact-box, .contact-form {
+      flex: 1;
+      min-width: 250px;
+    }
+    .contact-box div {
+      background: var(--card-bg);
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    .contact-box svg {
+      margin-right: 10px;
+      color: #3f3fff;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #888;
+      background: var(--footer-bg);
+      margin-top: 40px;
+    }
+    .icon {
+      width: 24px;
+      height: 24px;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+    img{
+        width: 300px;        
+    }
+    .me{
+        filter: grayscale(0.3);
+        filter: opacity(0.9);
+        width: 250px;
+        height: 350px;
+        border-radius: 50px;
+        box-shadow: 3px 5px 10px rgba(135, 135, 135, 0.662);
+        transition: all ease-in-out 0.5s;
+    }
+    .me:hover{
+        scale: 101%;
+        filter: grayscale(0);
+        box-shadow: 0px 3px 3px 3px rgba(107, 107, 107, 0.402);
+        transition: all ease-in-out 0.5s;
+    }
+    .more{
+      all: unset;padding: 10px;float: right;border: 1px solid black;border-radius: 4px;display: none;
+    }
+    .ii{
+      all: unset;padding: 10px;float: right;border: 0px solid rgb(255, 254, 254);border-radius: 4px;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+        @media (max-width: 950px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+      .ii{
+        display: none;
+      }
+      #ff{
+        display: inline;
+      }
+      .kk{
+        display: none;
+      }
+    }
+    @media (min-width: 950px) {
+      #ff{
+        display: none;
+      }
+    }
+    .gt{
+       position: fixed;background-color: transparent;height: 100%;z-index: 4;width: 100%;backdrop-filter: blur(50px);left: -100%;
+       transition: all ease-in-out 1s;
+    }
+    html{
+      scroll-behavior: smooth;
+    }
+    #we1{
+      display: none;
+    }
+    li{
+      text-decoration: none;
+      padding: 12px;
+      margin-right: 10px;
+    }
+    .theme-toggle{
+      border: 0px;
+      font-size: larger;
+    }
+    .card{
+      transition: all ease-in-out 0.3s;
+    }
+    .card:hover{
+      transform: translateY(4px);
+      scale: 101%;
+      box-shadow: 0px 3px 3px 3px rgba(107, 107, 107, 0.402);
+    }
+    a:hover 
+    {
+    opacity: 0.8;
+    filter:grayscale(0.5);
+    }  
+    #ff1{
+      display: none;
+    }
+    .k li a{
+      color:#3f3fb0;
+      transition: all 0.5s;
+    }
+    .k li a:hover{
+      scale: 102%;
+    }
+    nav a.active-nav {
+    color: #7777ff; /* Choose your highlight color */
+    font-weight: bold;
+    border-bottom: 2px solid #7777ff;
+    }
+    section {
+            padding: 100px 20px;
+            min-height: 100vh;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s ease-in-out;
+        }
+
+    section.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin-top: 15px;
+  font-size: 1.25rem;
+}
+
+.card p {
+  padding: 0 15px;
+}
+
+.card a {
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+        
